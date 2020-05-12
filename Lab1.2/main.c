@@ -82,9 +82,9 @@ float accZ = acc_z/16384.0;
 
 printf("Praca studentow: 241778, 236032 - 08.05.2020\n");
 printf("-----AKCELEROMETR-----\r\n");
-printf("dane dla osi OX: %f\r\n", accX); //Wyświetlenie danych uzyskanych z akcelerometru
-printf("dane dla osi OY: %f\r\n", accY);
-printf("dane dla osi OZ: %f\r\n", accZ);
+printf("przyspieszenie dla osi OX: %f g\n", accX); //Wyświetlenie danych uzyskanych z akcelerometru
+printf("przyspieszenie dla osi OY: %f g\n", accY);
+printf("przyspieszenie dla osi OZ: %f g\n", accZ);
 printf("\n");
  
 //------------------------------------------POMIARY - ZYROSKOP-------------------------------
@@ -115,9 +115,9 @@ float gyroZ = gyro_z/131.0;
 
 printf("Praca studentow: 241778, 236032 - 08.05.2020\n");
 printf("-----ZYROSKOP-----\r\n");
-printf("wpolrzedne osi OX: %f\r\n", gyroX); //Wyświetlenie danych uzyskanych z żyroskopu
-printf("wpolrzedne osi OY: %f\r\n", gyroY);
-printf("wpolrzedne osi OZ: %f\r\n", gyroZ);
+printf("przyspieszenie - oś OX: %f stopni/s\n", gyroX); //Wyświetlenie danych uzyskanych z żyroskopu
+printf("przyspieszenie - oś OY: %f stopni/s\n", gyroY);
+printf("przyspieszenie - oś OZ: %f stopni/s\n", gyroZ);
 printf("\n");
 
 //------------------------------------------POZIOMICA-------------------------------
@@ -125,7 +125,7 @@ float poziom = atan2(acc_x, acc_z) * (180 / M_PI); //obliczenie poziomu (wzór z
 
 printf("Praca studentow: 241778, 236032 - 08.05.2020\n");
 printf("-----POZIOMICA-----\r\n");
-printf("POZIOM: %f\r\n", poziom); //Wyświetlenie poziomu
+printf("POZIOM: %f stopni\n", poziom); //Wyświetlenie poziomu
 
 return 0;
 
